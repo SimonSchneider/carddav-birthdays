@@ -1,0 +1,7 @@
+services:
+  carddav-birthdays:
+    image: ghcr.io/simonschneider/carddav-birthdays:main
+    volumes:
+      - ./tmp-cfg:/cfg
+    ports:
+      - "8888:80"
